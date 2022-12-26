@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <script>
+            let num = prompt("Number");
+            let hours = num/60;
+            if(num%60==0){
+                alert(`ONLY ${hours} HOURS`)
+            }else{
+                let ostatok = num%60;
+                alert((hours).toFixed(0) +" hours and "+ostatok +" minutes")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let a = parseInt(prompt("INSERT YOUR AMOUNT IN KZT"));
+            let Digit = prompt (` 1 - CONVERT TO USD \n 2 - CONVERT TO EUR \n 3 - CONVERT TO GBP\n (Курсы валют: USD - 380KZT, EUR - 430KZT, GBP - 480KZT)\n Choose currancy`)
+            if (Digit==1){
+                y=(a/380).toFixed(1);
+                Ans_y=y +" USD";
+            }else if (Digit==2){
+                y=(a/430).toFixed(1);;
+                Ans_y= y +" EUR";
+            }else if (Digit==3){
+                y=(a/480).toFixed(1);;
+                Ans_y = `${y} + GBP`;
+            } 
+            alert(`${a} KZT = ${Ans_y}`);
+        </script>
+    </body>
+</html>

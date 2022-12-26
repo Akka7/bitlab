@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            let tenge = prompt("amount of kzt");
+            let USD = tenge/380;
+            if(tenge%380==0){
+                alert(`ONLY ${USD} USD`)
+            }else{
+                let ostatok = tenge%380;
+                let cent= (ostatok/3.8).toFixed(0)
+                alert((USD).toFixed(0) +" USD and "+cent +" cents")
+            }
+        </script>
+    </body>
+</html>
